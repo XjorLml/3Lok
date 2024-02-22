@@ -13,16 +13,76 @@ class GamePage extends StatefulWidget {
 
 class _GamePageState extends State<GamePage> {
   int _currentSlide = 0;
-  List<String> _answers = ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'];
+  int _score = 0;
+  List<List<String>> _allAnswers = [
+    ['NCR', 'CALABARZON', 'MIMAROPA', 'CAR'],
+    ['Cagayan Valley', 'CAR', 'Ilocos Region', 'CENTRAL LUZON'],
+    ['CALABARZON', 'CENTRAL LUZON', 'MIMAROPA', 'CAGAYAN VALLEY']
+  ];
 
-  void _nextSlide() {
+  List<List<String>> _imagePaths = [
+    ['assets/luzon/pasig1.jpg', 'assets/luzon/pasig2.jpg', 'assets/luzon/pasig3.jpg'],
+    ['assets/luzon/CAR1.jpg', 'assets/luzon/CAR2.jpg', 'assets/luzon/CAR3.jpg'],
+    ['assets/luzon/MIMAROPA1.jpg', 'assets/luzon/MIMAROPA2.jpg', 'assets/luzon/MIMAROPA3.jpg'],
+  ];
+
+    void _nextSlide() {
     setState(() {
       if (_currentSlide < 2) {
         _currentSlide++;
       } else {
-        _currentSlide = 0;
+        if (_currentSlide == 2) {
+          // Display total score when all sets of slides are answered
+          showDialog(
+            context: context,
+            builder: (BuildContext context) {
+              return AlertDialog(
+                title: Text('Game Over'),
+                content: Text('Your final score is $_score out of 3'),
+                actions: [
+                  TextButton(
+                    onPressed: () {
+                      Navigator.of(context).pop(); // Close the dialog
+                      Navigator.pop(context); // Navigate back to the CategoryPage
+                    },
+                    child: Text('Close'),
+                  ),
+                ],
+              );
+            },
+          );
+        }
+        _currentSlide = 0; // Reset the current slide to restart the game
       }
     });
+  }
+
+  void _checkAnswer(String selectedAnswer) {
+    String correctAnswer = _allAnswers[_currentSlide][_currentSlide];
+    bool isCorrect = selectedAnswer == correctAnswer;
+    if (isCorrect) {
+      setState(() {
+        _score++;
+      });
+    }
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text(isCorrect ? 'Correct!' : 'Wrong!'),
+          content: Text(isCorrect ? 'Your answer is correct.' : 'Your answer is incorrect.'),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+                _nextSlide(); // Move to the next slide
+              },
+              child: Text('Close'),
+            ),
+          ],
+        );
+      },
+    );
   }
 
   @override
@@ -33,50 +93,43 @@ class _GamePageState extends State<GamePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            // Slide image carousel
             CarouselSlider.builder(
-              itemCount: 3, // Number of slides
+              itemCount: 3,
               options: CarouselOptions(
                 height: 300,
                 aspectRatio: 16 / 9,
                 viewportFraction: 0.8,
                 initialPage: 0,
-                enableInfiniteScroll: true,
+                enableInfiniteScroll: false, // Disable infinite scrolling
                 reverse: false,
-                autoPlay: false, // Disable auto play for now
+                autoPlay: false,
                 enlargeCenterPage: true,
                 enlargeFactor: 0.3,
                 scrollDirection: Axis.horizontal,
-                onPageChanged: (index, reason) {
-                  // Handle page change if needed
-                },
+                onPageChanged: (index, reason) {},
               ),
-              itemBuilder:
-                  (BuildContext context, int index, int pageViewIndex) {
+              itemBuilder: (BuildContext context, int index, int pageViewIndex) {
                 return Image.asset(
-                  'assets/luzon/pasig${index + 1}.jpg',
+                  _imagePaths[_currentSlide][index],
                   width: MediaQuery.of(context).size.width,
                   fit: BoxFit.cover,
                 );
               },
             ),
             SizedBox(height: 20.0),
-            // Answer buttons
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: _answers.map((answer) {
+              children: _allAnswers[_currentSlide].map((answer) {
                 return Expanded(
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.blue, // Button color
-                        onPrimary: Colors.white, // Text color
+                        primary: Colors.blue,
+                        onPrimary: Colors.white,
                       ),
                       onPressed: () {
-                        // Check if the answer is correct
-                        // For now, let's just move to the next slide
-                        _nextSlide();
+                        _checkAnswer(answer);
                       },
                       child: Text(answer),
                     ),
@@ -84,9 +137,20 @@ class _GamePageState extends State<GamePage> {
                 );
               }).toList(),
             ),
+            SizedBox(height: 20.0),
+            Text(
+              'Score: $_score',
+              style: TextStyle(fontSize: 24),
+            ),
           ],
         ),
       ),
     );
   }
+}
+
+void main() {
+  runApp(MaterialApp(
+    home: GamePage(category: "General", level: "Easy"),
+  ));
 }
