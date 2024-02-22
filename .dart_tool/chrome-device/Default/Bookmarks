@@ -1,0 +1,69 @@
+{
+   "checksum": "3785c8b64f6627ec2d201d49d47e6f5d",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13353069718711865",
+            "date_last_used": "0",
+            "guid": "01b75ad1-fd2c-4e17-b7aa-81d2a6d05c72",
+            "id": "7",
+            "name": "Agoda",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://s3.amazonaws.com/amundsen/redirect/19q2/agoda.html?utm_source=win32&utm_medium=favorite"
+         }, {
+            "children": [ {
+               "date_added": "13243662809620622",
+               "date_last_used": "0",
+               "guid": "1f0bc004-5071-486c-9194-b452fcbb8bf3",
+               "id": "9",
+               "name": "Acer",
+               "show_icon": false,
+               "source": "import_fre",
+               "type": "url",
+               "url": "http://www.acer.com/"
+            } ],
+            "date_added": "13353069721391255",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "fd284fe7-ed30-4a54-890b-5d62e8e17533",
+            "id": "8",
+            "name": "Acer",
+            "source": "import_fre",
+            "type": "folder"
+         } ],
+         "date_added": "13353069718353306",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13353069718353309",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13353069718353315",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
