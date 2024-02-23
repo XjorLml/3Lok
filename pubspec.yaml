@@ -69,6 +69,12 @@ flutter:
     - assets/luzon/pasig1.jpg
     - assets/luzon/pasig2.jpg
     - assets/luzon/pasig3.jpg
+    - assets/luzon/CAR1.jpg
+    - assets/luzon/CAR2.jpg
+    - assets/luzon/CAR3.jpg
+    - assets/luzon/MIMAROPA1.jpg
+    - assets/luzon/MIMAROPA2.jpg
+    - assets/luzon/MIMAROPA3.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
