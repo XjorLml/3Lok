@@ -66,15 +66,38 @@ flutter:
     - assets/luzon.jpg
     - assets/visayas.jpg
     - assets/mindanao.jpg
-    - assets/luzon/pasig1.jpg
-    - assets/luzon/pasig2.jpg
-    - assets/luzon/pasig3.jpg
-    - assets/luzon/CAR1.jpg
-    - assets/luzon/CAR2.jpg
-    - assets/luzon/CAR3.jpg
-    - assets/luzon/MIMAROPA1.jpg
-    - assets/luzon/MIMAROPA2.jpg
-    - assets/luzon/MIMAROPA3.jpg
+    - assets/luzon/
+    - assets/luzon/Easy_Region/Central/
+    - assets/luzon/Easy_Region/Bicol/
+    - assets/luzon/Easy_Region/Cagayan Valley/
+    - assets/luzon/Easy_Region/CALABARZON/
+    - assets/luzon/Easy_Region/CAR/
+    - assets/luzon/Easy_Region/Ilocos/
+    - assets/luzon/Easy_Region/MIMAROPA/
+    - assets/luzon/Easy_Region/NCR/
+    - assets/luzon/Average_Cities/Antipolo City/
+    - assets/luzon/Average_Cities/Baguio City/
+    - assets/luzon/Average_Cities/Batangas City/
+    - assets/luzon/Average_Cities/Calamba City/
+    - assets/luzon/Average_Cities/Gapan City/
+    - assets/luzon/Average_Cities/Marikina City/
+    - assets/luzon/Average_Cities/Olongapo City/
+    - assets/luzon/Average_Cities/Pasig City/
+    - assets/luzon/Average_Cities/Tagaytay City/
+    - assets/luzon/Average_Cities/Taguig City/
+    - assets/luzon/Hard_Provinces/Bataan/
+    - assets/luzon/Hard_Provinces/Camarines Norte/
+    - assets/luzon/Hard_Provinces/Mountain Province/
+    - assets/luzon/Hard_Provinces/NCR 4th District/
+    - assets/luzon/Hard_Provinces/Pangasinan/
+    - assets/luzon/Hard_Provinces/Quezon/
+    - assets/luzon/Hard_Provinces/Tarlac/
+    - assets/luzon/Hard_Provinces/Zambales/
+    
+    
+
+
+    
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -244,7 +244,7 @@
       "appName": "operation_platform",
       "data": {
          "operation_notification_config": {
-            "body": "[0222 Test 16:19] Sample Notification Body",
+            "body": "Sample Body",
             "max_datetime_str": "28 Feb 2024 13:00 GMT",
             "max_version": 125,
             "min_datetime_str": "6 Feb 2024 13:00 GMT",
@@ -257,7 +257,7 @@
                "language_code": "en",
                "operation_debug_user": true
             },
-            "title": "[0222 Test 16:19] Sample Notification Title"
+            "title": "Sample Title"
          },
          "operation_upsell_config": {
             "is_full_screen": false,
@@ -277,7 +277,7 @@
       "effectStrategy": "launch",
       "instanceId": "35cafee49b9741a5ae5b2f7799ecc815",
       "type": "normal",
-      "version": "1009"
+      "version": "1010"
    } ],
-   "version": "202402220002"
+   "version": "202402220003"
 }
