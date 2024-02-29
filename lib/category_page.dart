@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'game_page.dart';
+import 'package:flutter_app/luzon_cities_page.dart';
+import 'package:flutter_app/luzon_provinces_page.dart';
+//import 'game_page.dart';
+import 'luzon_regions_page.dart.dart';
 
 class CategoryPage extends StatefulWidget {
   @override
@@ -192,19 +195,45 @@ class _CategoryPageState extends State<CategoryPage> {
               SizedBox(height: 20.0),
               ElevatedButton(
                 onPressed: () {
-                  if (_selectedCategory.isNotEmpty &&
-                      _selectedLevel.isNotEmpty) {
+                  if (_selectedCategory == 'Luzon' &&
+                      _selectedLevel  == 'Regions') {
                     // Navigate to the game page with the selected category and level
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => GamePage(
+                        builder: (context) => LuzonRegion(
                           category: _selectedCategory,
                           level: _selectedLevel,
                         ),
                       ),
                     );
-                  } else {
+                  } 
+                   if (_selectedCategory  == 'Luzon' &&
+                      _selectedLevel  == 'Provinces') {
+                    // Navigate to the game page with the selected category and level
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LuzonProvince(
+                          category: _selectedCategory,
+                          level: _selectedLevel,
+                        ),
+                      ),
+                    );
+                  }
+                   if (_selectedCategory  == 'Luzon'&&
+                      _selectedLevel  == 'Cities') {
+                    // Navigate to the game page with the selected category and level
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LuzonCity(
+                          category: _selectedCategory,
+                          level: _selectedLevel,
+                        ),
+                      ),
+                    );
+                    }else {
                     // Show a message or handle the case where no category or level is selected
                   }
                 },
