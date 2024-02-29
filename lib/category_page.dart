@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/luzon_cities_page.dart';
 import 'package:flutter_app/luzon_provinces_page.dart';
+import 'package:flutter_app/visayas_regions_page.dart';
+import 'package:flutter_app/minadanao_regions_page.dart';
 //import 'game_page.dart';
 import 'luzon_regions_page.dart.dart';
 
@@ -28,6 +30,15 @@ class _CategoryPageState extends State<CategoryPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Category Page'),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+      ),
       backgroundColor: Colors.lightBlue[50],
       body: Center(
         child: Padding(
@@ -168,7 +179,7 @@ class _CategoryPageState extends State<CategoryPage> {
                           : Colors.blue[100],
                       padding: EdgeInsets.all(8.0),
                       child: Text(
-                        'Province (average)',
+                        'Province (medium)',
                         style: TextStyle(
                           color: Colors.black,
                         ),
@@ -222,6 +233,84 @@ class _CategoryPageState extends State<CategoryPage> {
                     );
                   }
                    if (_selectedCategory  == 'Luzon'&&
+                      _selectedLevel  == 'Cities') {
+                    // Navigate to the game page with the selected category and level
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LuzonCity(
+                          category: _selectedCategory,
+                          level: _selectedLevel,
+                        ),
+                      ),
+                    );
+                    }
+                    if (_selectedCategory == 'Visayas' &&
+                      _selectedLevel  == 'Regions') {
+                    // Navigate to the game page with the selected category and level
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => VisayasRegion(
+                          category: _selectedCategory,
+                          level: _selectedLevel,
+                        ),
+                      ),
+                    );
+                  } 
+                   if (_selectedCategory  == 'Visayas' &&
+                      _selectedLevel  == 'Provinces') {
+                    // Navigate to the game page with the selected category and level
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LuzonProvince(
+                          category: _selectedCategory,
+                          level: _selectedLevel,
+                        ),
+                      ),
+                    );
+                  }
+                   if (_selectedCategory  == 'Visayas'&&
+                      _selectedLevel  == 'Cities') {
+                    // Navigate to the game page with the selected category and level
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LuzonCity(
+                          category: _selectedCategory,
+                          level: _selectedLevel,
+                        ),
+                      ),
+                    );
+                    }
+                    if (_selectedCategory == 'Mindanao' &&
+                      _selectedLevel  == 'Regions') {
+                    // Navigate to the game page with the selected category and level
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => MindanaoRegion(
+                          category: _selectedCategory,
+                          level: _selectedLevel,
+                        ),
+                      ),
+                    );
+                  } 
+                   if (_selectedCategory  == 'Mindanao' &&
+                      _selectedLevel  == 'Provinces') {
+                    // Navigate to the game page with the selected category and level
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LuzonProvince(
+                          category: _selectedCategory,
+                          level: _selectedLevel,
+                        ),
+                      ),
+                    );
+                  }
+                   if (_selectedCategory  == 'Mindanao'&&
                       _selectedLevel  == 'Cities') {
                     // Navigate to the game page with the selected category and level
                     Navigator.push(

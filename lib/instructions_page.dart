@@ -5,6 +5,15 @@ class InstructionsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Instructions Page'),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+      ),
       backgroundColor: Colors.lightBlue[50],
       body: Center(
         child: Padding(
@@ -58,7 +67,7 @@ class InstructionsPage extends StatelessWidget {
                           style: TextStyle(color: Colors.green),
                         ),
                         TextSpan(
-                          text: 'Provinces (average) 8 Questions\n ',
+                          text: 'Provinces (medium) 8 Questions\n ',
                           style: TextStyle(color: Colors.orange),
                         ),
                         TextSpan(

@@ -147,7 +147,7 @@ class _LuzonCityState extends State<LuzonCity> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Luzon Region'),
+          title: Text('Luzon Cities (Hard)'),
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () async {

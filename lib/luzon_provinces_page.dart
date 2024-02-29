@@ -141,7 +141,7 @@ class _LuzonProvinceState extends State<LuzonProvince> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Luzon Region'),
+          title: Text('Luzon Provinces (Medium)'),
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () async {

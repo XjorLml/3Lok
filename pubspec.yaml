@@ -93,6 +93,16 @@ flutter:
     - assets/luzon/Hard_Provinces/Quezon/
     - assets/luzon/Hard_Provinces/Tarlac/
     - assets/luzon/Hard_Provinces/Zambales/
+    - assets/visayas/Easy_Region/Central/
+    - assets/visayas/Easy_Region/Eastern/
+    - assets/visayas/Easy_Region/Western/
+    - assets/mindanao/Easy_Region/CARAGA/
+    - assets/mindanao/Easy_Region/Davao Region/
+    - assets/mindanao/Easy_Region/Northern Mindanao/
+    - assets/mindanao/Easy_Region/Soccksargen/
+    - assets/mindanao/Easy_Region/Zamboanga Peninsula/
+    
+    
     
     
 
