@@ -85,6 +85,15 @@ flutter:
     - assets/luzon/Average_Cities/Pasig City/
     - assets/luzon/Average_Cities/Tagaytay City/
     - assets/luzon/Average_Cities/Taguig City/
+    - assets/luzon/Hard_Provinces/Bataan/
+    - assets/luzon/Hard_Provinces/Camarines Norte/
+    - assets/luzon/Hard_Provinces/Mountain Province/
+    - assets/luzon/Hard_Provinces/NCR 4th District/
+    - assets/luzon/Hard_Provinces/Pangasinan/
+    - assets/luzon/Hard_Provinces/Quezon/
+    - assets/luzon/Hard_Provinces/Tarlac/
+    - assets/luzon/Hard_Provinces/Zambales/
+    
     
 
 

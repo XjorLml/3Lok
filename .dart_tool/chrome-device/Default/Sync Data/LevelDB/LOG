@@ -1,7 +1,5 @@
-2024/02/29-13:24:48.255 6ebc Reusing MANIFEST C:\Users\lemnu\AppData\Local\Temp\flutter_tools.fff67116\flutter_tools_chrome_device.d4bf0fdf\Default\Sync Data\LevelDB/MANIFEST-000001
-2024/02/29-13:24:48.256 6ebc Recovering log #4
-2024/02/29-13:24:48.263 6ebc Reusing old log C:\Users\lemnu\AppData\Local\Temp\flutter_tools.fff67116\flutter_tools_chrome_device.d4bf0fdf\Default\Sync Data\LevelDB/000004.log 
-2024/02/29-13:24:48.264 6ebc Delete type=0 #3
-2024/02/29-13:38:03.862 6ebc Level-0 table #8: started
-2024/02/29-13:38:03.874 6ebc Level-0 table #8: 78676 bytes OK
-2024/02/29-13:38:03.875 6ebc Delete type=0 #4
+2024/02/29-19:00:16.930 1724 Reusing MANIFEST C:\Users\lemnu\AppData\Local\Temp\flutter_tools.e429b095\flutter_tools_chrome_device.a98eabf4\Default\Sync Data\LevelDB/MANIFEST-000001
+2024/02/29-19:00:16.932 1724 Recovering log #7
+2024/02/29-19:00:16.983 1724 Reusing old log C:\Users\lemnu\AppData\Local\Temp\flutter_tools.e429b095\flutter_tools_chrome_device.a98eabf4\Default\Sync Data\LevelDB/000007.log 
+2024/02/29-19:00:16.985 1724 Delete type=0 #3
+2024/02/29-19:00:16.986 1724 Delete type=0 #4

@@ -34,9 +34,9 @@ class _LuzonCityState extends State<LuzonCity> {
     ['assets/luzon/Average_Cities/Baguio City/Baguio1.jpg', 'assets/luzon/Average_Cities/Baguio City/Baguio2.jpg', 'assets/luzon/Average_Cities/Baguio City/Baguio3.jpg'],
     ['assets/luzon/Average_Cities/Pasig City/Pasig1.jpg', 'assets/luzon/Average_Cities/Pasig City/Pasig2.jpg', 'assets/luzon/Average_Cities/Pasig City/Pasig3.png'],
     ['assets/luzon/Average_Cities/Olongapo City/Olongapo1.jpg', 'assets/luzon/Average_Cities/Olongapo City/Olongapo2.jpg', 'assets/luzon/Average_Cities/Olongapo City/Olongapo3.jpg'],
-    ['assets/luzon/Average_Cities/Calamba City/', 'assets/luzon/Average_Cities/Calamba City/', 'assets/luzon/Average_Cities/Calamba City/'],
-    ['assets/luzon/Average_Cities/Marikina City/', 'assets/luzon/Average_Cities/Marikina City/', 'assets/luzon/Average_Cities/Marikina City/'],
-    ['assets/luzon/Average_Cities/Batangas City/', 'assets/luzon/Average_Cities/Batangas City/', 'assets/luzon/Average_Cities/Batangas City/'],
+    ['assets/luzon/Average_Cities/Calamba City/Calamba1.jpg', 'assets/luzon/Average_Cities/Calamba City/Calamba2.jpg', 'assets/luzon/Average_Cities/Calamba City/Calamba3.webp'],
+    ['assets/luzon/Average_Cities/Marikina City/Marikina1.jpg', 'assets/luzon/Average_Cities/Marikina City/Marikina2.jpg', 'assets/luzon/Average_Cities/Marikina City/Marikina3.jpg'],
+    ['assets/luzon/Average_Cities/Batangas City/Batangas1.jpg', 'assets/luzon/Average_Cities/Batangas City/Batangas2.jpg', 'assets/luzon/Average_Cities/Batangas City/Batangas3.png'],
     ['assets/luzon/Average_Cities/Tagaytay City/Tagaytay1.jpg', 'assets/luzon/Average_Cities/Tagaytay City/Tagaytay2.jpg', 'assets/luzon/Average_Cities/Tagaytay City/Tagaytay3.png'],
     ['assets/luzon/Average_Cities/Gapan City/Gapan1.jpg', 'assets/luzon/Average_Cities/Gapan City/Gapan2.png', 'assets/luzon/Average_Cities/Gapan City/Gapan3.jpg'],
     ['assets/luzon/Average_Cities/Taguig City/Taguig1.jpg', 'assets/luzon/Average_Cities/Taguig City/Taguig2.jpg', 'assets/luzon/Average_Cities/Taguig City/Taguig3.jpg'],
@@ -143,7 +143,7 @@ class _LuzonCityState extends State<LuzonCity> {
               ],
             );
           },
-        ) ?? false;
+        );
       },
       child: Scaffold(
         appBar: AppBar(

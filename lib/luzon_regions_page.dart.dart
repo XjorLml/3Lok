@@ -18,24 +18,24 @@ class _LuzonRegionState extends State<LuzonRegion> {
 
   List<List<String>> _allAnswers = [
     ['Central Luzon', 'CALABARZON', 'MIMAROPA', 'CAR'],
-    ['CAR', 'Cagayan Valley', 'Ilocos Region', 'Bicol Region'],
+    //['CAR', 'Cagayan Valley', 'Ilocos Region', 'Bicol Region'],
     ['MIMAROPA', 'CALABARZON', 'Bicol Region', 'Cagayan Valley'],
     ['Cagayan Valley', 'MIMAROPA', 'CAR', 'NCR'],
     ['Bicol Region', 'Central Luzon', 'Cagayan Valley', 'Ilocos Region'],
-    ['Ilocos Region', 'Bicol Region', 'CAR', 'CALABARZON'],
+    //['Ilocos Region', 'Bicol Region', 'CAR', 'CALABARZON'],
     ['NCR', 'Ilocos Region', 'CAR', 'Cagayan Valley'],
-    ['CALABARZON', 'Central Luzon', 'Bicol Region', 'Cagayan Valley'],
+    //['CALABARZON', 'Central Luzon', 'Bicol Region', 'Cagayan Valley'],
   ];
 
   List<List<String>> _imagePaths = [
     ['assets/luzon/Easy_Region/Central/Central1.jpg', 'assets/luzon/Easy_Region/Central/Central2.jpg', 'assets/luzon/Easy_Region/Central/Central3.jpg'],
-    ['assets/luzon/Easy_Region/CAR/CAR1.jpg', 'assets/luzon/Easy_Region/CAR/CAR2.jpg', 'assets/luzon/Easy_Region/CAR/CAR3.jpg'],
+    //['assets/luzon/Easy_Region/CAR/CAR1.jpg', 'assets/luzon/Easy_Region/CAR/CAR2.jpg', 'assets/luzon/Easy_Region/CAR/CAR3.jpg'],
     ['assets/luzon/Easy_Region/MIMAROPA/4b1.webp', 'assets/luzon/Easy_Region/MIMAROPA/4b2.jpg', 'assets/luzon/Easy_Region/MIMAROPA/4b3.jpg'],
     ['assets/luzon/Easy_Region/Cagayan Valley/CV1.jpg', 'assets/luzon/Easy_Region/Cagayan Valley/CV2.jpg', 'assets/luzon/Easy_Region/Cagayan Valley/CV3.jpg'],
     ['assets/luzon/Easy_Region/Bicol/Bicol1.jpg', 'assets/luzon/Easy_Region/Bicol/Bicol2.webp', 'assets/luzon/Easy_Region/Bicol/Bicol3.jpg'],
-    ['assets/luzon/Easy_Region/Ilocos/Ilocos1.webp', 'assets/luzon/Easy_Region/Ilocos/Ilocos2.jpeg', 'assets/luzon/Easy_Region/Ilocos/Ilocos3.jpeg'],
+    //['assets/luzon/Easy_Region/Ilocos/Ilocos1.webp', 'assets/luzon/Easy_Region/Ilocos/Ilocos2.jpg', 'assets/luzon/Easy_Region/Ilocos/Ilocos3.jpg'],
     ['assets/luzon/Easy_Region/NCR/NCR1.jpg', 'assets/luzon/Easy_Region/NCR/NCR2.jpg', 'assets/luzon/Easy_Region/NCR/NCR3.jpg'],
-    ['assets/luzon/Easy_Region/CALABARZON/4a1.webp', 'assets/luzon/Easy_Region/CALABARZON/4a2.webp', 'assets/luzon/Easy_Region/CALABARZON/4a3.jpg'],
+    //['assets/luzon/Easy_Region/CALABARZON/4a1.webp', 'assets/luzon/Easy_Region/CALABARZON/4a2.webp', 'assets/luzon/Easy_Region/CALABARZON/4a3.jpg'],
   ];
 
   List<List<String>> _shuffledAnswers = [];
@@ -137,7 +137,7 @@ class _LuzonRegionState extends State<LuzonRegion> {
               ],
             );
           },
-        ) ?? false;
+        );
       },
       child: Scaffold(
         appBar: AppBar(

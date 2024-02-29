@@ -54,15 +54,15 @@ class InstructionsPage extends StatelessWidget {
                               '2. Choose a Level: Pick a level of difficulty :\n ',
                         ),
                         TextSpan(
-                          text: 'Regions (easy),\n ',
+                          text: 'Regions (easy) 5 Questions,\n ',
                           style: TextStyle(color: Colors.green),
                         ),
                         TextSpan(
-                          text: 'Provinces (average)\n ',
+                          text: 'Provinces (average) 8 Questions\n ',
                           style: TextStyle(color: Colors.orange),
                         ),
                         TextSpan(
-                          text: 'Cities (hard).\n',
+                          text: 'Cities (hard) 10 Questions.\n',
                           style: TextStyle(color: Colors.red),
                         ),
                         TextSpan(
