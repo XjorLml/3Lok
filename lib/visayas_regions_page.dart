@@ -25,7 +25,7 @@ class _VisayasRegionState extends State<VisayasRegion> {
   ];
 
   List<List<String>> _imagePaths = [
-    ['assets/visayas/Easy_Region/Central/CentralV1.jpg', 'assets/visayas/Easy_Region/Central/CentralV2.jpg', 'assets/visayas/Easy_Region/Central/CentralV3.jpg'],
+    ['assets/visayas/Easy_Region/Central/CentralV1.jpg', 'assets/visayas/Easy_Region/Central/CentralV2.jpg', 'assets/visayas/Easy_Region/Central/CentralV3 .jpg'],
     ['assets/visayas/Easy_Region/Western/Western1.jpg', 'assets/visayas/Easy_Region/Western/Western2.jpg', 'assets/visayas/Easy_Region/Western/Western3.jpg'],
     ['assets/visayas/Easy_Region/Eastern/Eastern1.jpg', 'assets/visayas/Easy_Region/Eastern/Eastern2.webp', 'assets/visayas/Easy_Region/Eastern/Eastern3.jpg'],
     ['assets/visayas/Easy_Region/Western/Western4.jpg', 'assets/visayas/Easy_Region/Western/Western5.jpg', 'assets/visayas/Easy_Region/Western/Western6.jpg'],
@@ -135,7 +135,7 @@ class _VisayasRegionState extends State<VisayasRegion> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Visayas Region (Easy)'),
+          title: Text('Visayas Regions (Easy)'),
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () async {

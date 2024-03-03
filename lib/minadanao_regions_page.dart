@@ -135,7 +135,7 @@ class _MindanaoRegionState extends State<MindanaoRegion> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Mindanao Region (Easy)'),
+          title: Text('Mindanao Regions (Easy)'),
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () async {

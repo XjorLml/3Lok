@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/luzon_cities_page.dart';
 import 'package:flutter_app/luzon_provinces_page.dart';
+import 'package:flutter_app/mindanao_cities_page.dart';
+import 'package:flutter_app/mindanao_provinces_page.dart';
+import 'package:flutter_app/visayas_cities_page.dart';
+import 'package:flutter_app/visayas_provinces_page.dart';
 import 'package:flutter_app/visayas_regions_page.dart';
 import 'package:flutter_app/minadanao_regions_page.dart';
 //import 'game_page.dart';
@@ -264,7 +268,7 @@ class _CategoryPageState extends State<CategoryPage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => LuzonProvince(
+                        builder: (context) => VisayasProvince(
                           category: _selectedCategory,
                           level: _selectedLevel,
                         ),
@@ -277,7 +281,7 @@ class _CategoryPageState extends State<CategoryPage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => LuzonCity(
+                        builder: (context) => VisayasCity(
                           category: _selectedCategory,
                           level: _selectedLevel,
                         ),
@@ -303,7 +307,7 @@ class _CategoryPageState extends State<CategoryPage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => LuzonProvince(
+                        builder: (context) => MindanaoProvince(
                           category: _selectedCategory,
                           level: _selectedLevel,
                         ),
@@ -316,7 +320,7 @@ class _CategoryPageState extends State<CategoryPage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => LuzonCity(
+                        builder: (context) => MindanaoCity(
                           category: _selectedCategory,
                           level: _selectedLevel,
                         ),
