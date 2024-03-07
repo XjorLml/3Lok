@@ -35,18 +35,46 @@ class _CategoryPageState extends State<CategoryPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Category Page'),
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: () {
-            Navigator.pop(context);
-          },
+        automaticallyImplyLeading: false, // Disable default back button
+        title: Row(
+          children: <Widget>[
+            IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: () {
+                Navigator.pop(context);
+              },
+            ),
+          ],
         ),
+        backgroundColor: Colors.transparent, // Make app bar transparent
+        elevation: 0,
       ),
+      extendBodyBehindAppBar: true,
       backgroundColor: Colors.lightBlue[50],
-      body: Center(
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/bg.jpg'),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: Center(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
+          child: Container(
+                width: MediaQuery.of(context).size.width * 0.8,
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.8),
+                  borderRadius: BorderRadius.circular(10.0),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.1),
+                      spreadRadius: 5,
+                      blurRadius: 7,
+                      offset: Offset(0, 3),
+                    ),
+                  ],
+                ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -211,7 +239,7 @@ class _CategoryPageState extends State<CategoryPage> {
               ElevatedButton(
                 onPressed: () {
                   if (_selectedCategory == 'Luzon' &&
-                      _selectedLevel  == 'Regions') {
+                      _selectedLevel == 'Regions') {
                     // Navigate to the game page with the selected category and level
                     Navigator.push(
                       context,
@@ -222,9 +250,9 @@ class _CategoryPageState extends State<CategoryPage> {
                         ),
                       ),
                     );
-                  } 
-                   if (_selectedCategory  == 'Luzon' &&
-                      _selectedLevel  == 'Provinces') {
+                  }
+                  if (_selectedCategory == 'Luzon' &&
+                      _selectedLevel == 'Provinces') {
                     // Navigate to the game page with the selected category and level
                     Navigator.push(
                       context,
@@ -236,8 +264,8 @@ class _CategoryPageState extends State<CategoryPage> {
                       ),
                     );
                   }
-                   if (_selectedCategory  == 'Luzon'&&
-                      _selectedLevel  == 'Cities') {
+                  if (_selectedCategory == 'Luzon' &&
+                      _selectedLevel == 'Cities') {
                     // Navigate to the game page with the selected category and level
                     Navigator.push(
                       context,
@@ -248,9 +276,9 @@ class _CategoryPageState extends State<CategoryPage> {
                         ),
                       ),
                     );
-                    }
-                    if (_selectedCategory == 'Visayas' &&
-                      _selectedLevel  == 'Regions') {
+                  }
+                  if (_selectedCategory == 'Visayas' &&
+                      _selectedLevel == 'Regions') {
                     // Navigate to the game page with the selected category and level
                     Navigator.push(
                       context,
@@ -261,9 +289,9 @@ class _CategoryPageState extends State<CategoryPage> {
                         ),
                       ),
                     );
-                  } 
-                   if (_selectedCategory  == 'Visayas' &&
-                      _selectedLevel  == 'Provinces') {
+                  }
+                  if (_selectedCategory == 'Visayas' &&
+                      _selectedLevel == 'Provinces') {
                     // Navigate to the game page with the selected category and level
                     Navigator.push(
                       context,
@@ -275,8 +303,8 @@ class _CategoryPageState extends State<CategoryPage> {
                       ),
                     );
                   }
-                   if (_selectedCategory  == 'Visayas'&&
-                      _selectedLevel  == 'Cities') {
+                  if (_selectedCategory == 'Visayas' &&
+                      _selectedLevel == 'Cities') {
                     // Navigate to the game page with the selected category and level
                     Navigator.push(
                       context,
@@ -287,9 +315,9 @@ class _CategoryPageState extends State<CategoryPage> {
                         ),
                       ),
                     );
-                    }
-                    if (_selectedCategory == 'Mindanao' &&
-                      _selectedLevel  == 'Regions') {
+                  }
+                  if (_selectedCategory == 'Mindanao' &&
+                      _selectedLevel == 'Regions') {
                     // Navigate to the game page with the selected category and level
                     Navigator.push(
                       context,
@@ -300,9 +328,9 @@ class _CategoryPageState extends State<CategoryPage> {
                         ),
                       ),
                     );
-                  } 
-                   if (_selectedCategory  == 'Mindanao' &&
-                      _selectedLevel  == 'Provinces') {
+                  }
+                  if (_selectedCategory == 'Mindanao' &&
+                      _selectedLevel == 'Provinces') {
                     // Navigate to the game page with the selected category and level
                     Navigator.push(
                       context,
@@ -314,8 +342,8 @@ class _CategoryPageState extends State<CategoryPage> {
                       ),
                     );
                   }
-                   if (_selectedCategory  == 'Mindanao'&&
-                      _selectedLevel  == 'Cities') {
+                  if (_selectedCategory == 'Mindanao' &&
+                      _selectedLevel == 'Cities') {
                     // Navigate to the game page with the selected category and level
                     Navigator.push(
                       context,
@@ -326,15 +354,15 @@ class _CategoryPageState extends State<CategoryPage> {
                         ),
                       ),
                     );
-                    }else {
+                  } else {
                     // Show a message or handle the case where no category or level is selected
                   }
                 },
                 style: ElevatedButton.styleFrom(
-                  primary:
-                      _selectedCategory.isNotEmpty && _selectedLevel.isNotEmpty
-                          ? Colors.blue
-                          : Colors.grey,
+                  primary: _selectedCategory.isNotEmpty &&
+                          _selectedLevel.isNotEmpty
+                      ? Colors.blue
+                      : Colors.grey,
                   onPrimary: Colors.white,
                 ),
                 child: Text('Play'),
@@ -342,6 +370,8 @@ class _CategoryPageState extends State<CategoryPage> {
             ],
           ),
         ),
+        ),
+      ),
       ),
     );
   }
