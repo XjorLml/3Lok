@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class LuzonCity extends StatefulWidget {
   final String category;
@@ -95,6 +96,13 @@ class _LuzonCityState extends State<LuzonCity> {
         setState(() {
           _score++;
         });
+        AudioCache _audioCache = AudioCache();
+        _audioCache.play('mohad.mp3');
+      }
+      bool isWrong = selectedAnswer != correctAnswer;
+      if (isWrong) {
+        AudioCache _audioCache = AudioCache();
+        _audioCache.play('lose.mp3');
       }
       showDialog(
         context: context,

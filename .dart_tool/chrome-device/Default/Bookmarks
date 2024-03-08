@@ -1,5 +1,5 @@
 {
-   "checksum": "08df5e87e3a63714f5d6bcaeec213231",
+   "checksum": "5652b13f92d0a0bf319a86a2091a9926",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -9,8 +9,6 @@
                "guid": "3ea56389-d91f-49e3-ba97-20d3ec6c886a",
                "id": "24",
                "name": "Acer",
-               "show_icon": false,
-               "source": "import_fre",
                "type": "url",
                "url": "http://www.acer.com/"
             } ],
@@ -20,7 +18,6 @@
             "guid": "aee01247-b0f4-4a21-ad55-cdb6450a0f28",
             "id": "23",
             "name": "Acer",
-            "source": "import_fre",
             "type": "folder"
          }, {
             "date_added": "13275364800741323",
@@ -28,8 +25,6 @@
             "guid": "51ef3905-a110-47c8-8ee8-6c867783a4cf",
             "id": "25",
             "name": "Messenger",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
             "url": "https://www.messenger.com/t/2261819327206904"
          }, {
@@ -38,8 +33,6 @@
             "guid": "511164ab-cec8-4d7b-be2f-f2ab9bdf4a89",
             "id": "26",
             "name": "Facebook",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
             "url": "https://www.facebook.com/"
          }, {
@@ -48,8 +41,6 @@
             "guid": "d36c96e4-5f5a-44e5-89fa-ecf16939ce01",
             "id": "27",
             "name": "Checking link",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
             "url": "https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html"
          }, {
@@ -58,8 +49,6 @@
             "guid": "7df530e8-1717-4d22-b7b3-dea00adf75bc",
             "id": "28",
             "name": "Free Plagiarism Checker Online for Students - PapersOwl",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
             "url": "https://papersowl.com/free-plagiarism-checker"
          }, {
@@ -68,8 +57,6 @@
             "guid": "47ada79b-03e3-469e-9b30-95e5865a3711",
             "id": "29",
             "name": "Inbox (897) - lemnuellumaban@gmail.com - Gmail",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
             "url": "https://mail.google.com/mail/u/0/#inbox"
          }, {
@@ -78,8 +65,6 @@
             "guid": "836ea3ec-e495-4fe4-8dc6-8f52a3440e8f",
             "id": "30",
             "name": "Resources - Google Docs",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
             "url": "https://docs.google.com/document/d/1am28yNPovlyhzu40t2B0GafQ9QaHABMtuXiq_VbRjuk/edit"
          }, {
@@ -88,8 +73,6 @@
             "guid": "df831938-4964-4175-9230-43f73b4704af",
             "id": "31",
             "name": "Hopkins: All courses",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
             "url": "https://moodle.hopkins.ph/course/index.php?categoryid=2"
          }, {
@@ -98,8 +81,6 @@
             "guid": "90b2b5cf-a680-43fc-baa8-ba726e2f0b03",
             "id": "32",
             "name": "L1.pdf",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
             "url": "https://nationalueduph.sharepoint.com/sites/DeLeonABC224GERIZ01XTF100-300PM/_layouts/15/embed.aspx?uniqueId=ba45f75c-f64f-4a4e-a392-d721dbceaca7&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvbmF0aW9uYWx1ZWR1cGguc2hhcmVwb2ludC5jb21AMWQ5ODFmNzctM2NhMy00NmFlLWIwZDQtZTgwNDRlNmM3Zjg0IiwiaXNzIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwibmJmIjoiMTY4MTE3MTEzNSIsImV4cCI6IjE2ODExNzE0MzUiLCJlbmRwb2ludHVybCI6IjR3dFpOTnhadlZuT2hWRzBmdjVhZXYxMFhjUm0wTzVqdUlGT29GcTkyRDg9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxNDQiLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsImNpZCI6Ik9HWmtaamRsTVRVdE5HRTJZaTAwTWpKaExUZ3pOV1V0T1RSbE56RTJOMlEyTURFNCIsInZlciI6Imhhc2hlZHByb29mdG9rZW4iLCJzaXRlaWQiOiJNekUxWW1ObFlqTXRZemMzTVMwMFptWmxMVGxtWkRrdE16WmpNems0TURVeU9XVmwiLCJhcHBfZGlzcGxheW5hbWUiOiJNaWNyb3NvZnQgVGVhbXMiLCJnaXZlbl9uYW1lIjoiTGVtbnVlbCIsImZhbWlseV9uYW1lIjoiTHVtYWJhbiIsInNpZ25pbl9zdGF0ZSI6IltcImttc2lcIl0iLCJhcHBpZCI6IjFmZWM4ZTc4LWJjZTQtNGFhZi1hYjFiLTU0NTFjYzM4NzI2NCIsInRpZCI6IjFkOTgxZjc3LTNjYTMtNDZhZS1iMGQ0LWU4MDQ0ZTZjN2Y4NCIsInVwbiI6Imx1bWFiYW5sc0BzdHVkZW50cy5uYXRpb25hbC11LmVkdS5waCIsInB1aWQiOiIxMDAzMjAwMjgwOEExNzIyIiwiY2FjaGVrZXkiOiIwaC5mfG1lbWJlcnNoaXB8MTAwMzIwMDI4MDhhMTcyMkBsaXZlLmNvbSIsInNjcCI6ImFsbGZpbGVzLndyaXRlIGFsbHNpdGVzLndyaXRlIiwidHQiOiIyIiwidXNlUGVyc2lzdGVudENvb2tpZSI6bnVsbCwiaXBhZGRyIjoiMjAuMTkwLjE0NC4xNzEifQ.QXQ0TUI4SHgrbXZ0RTFwNUpIdUNYZHMxTGFxR0ZpaCtCbzNJTWZDRlZNbz0&embed=%7B%22ha%22%3A%22teams%22%2C%22hv%22%3A%22assignments%22%2C%22hm%22%3A%22view%22%2C%22hp%22%3A%22electron%22%7D"
          }, {
@@ -108,8 +89,6 @@
             "guid": "8f2b8423-fb34-4adc-b9a3-e1241c19e483",
             "id": "33",
             "name": "ZeroGPT - Chat GPT, Open AI and AI text detector Free Tool",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
             "url": "https://www.zerogpt.com/"
          }, {
@@ -121,8 +100,6 @@
                "power_bookmark_meta": ""
             },
             "name": "03 Top Level View of Computer Function and Interconnection",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
             "url": "https://nationalueduph.sharepoint.com/sites/T1AY2023-CCOMPORG-INFP01/Shared%20Documents/General/CH03-Computer%20Components.pdf"
          }, {
@@ -131,8 +108,6 @@
             "guid": "01b75ad1-fd2c-4e17-b7aa-81d2a6d05c72",
             "id": "7",
             "name": "Agoda",
-            "show_icon": false,
-            "source": "oem_preload",
             "type": "url",
             "url": "https://s3.amazonaws.com/amundsen/redirect/19q2/agoda.html?utm_source=win32&utm_medium=favorite"
          } ],
@@ -141,8 +116,7 @@
          "date_modified": "0",
          "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
-         "name": "Favorites bar",
-         "source": "unknown",
+         "name": "Bookmarks bar",
          "type": "folder"
       },
       "other": {
@@ -152,8 +126,7 @@
          "date_modified": "0",
          "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
          "id": "2",
-         "name": "Other favorites",
-         "source": "unknown",
+         "name": "Other bookmarks",
          "type": "folder"
       },
       "synced": {
@@ -163,8 +136,6 @@
             "guid": "e10cb3b7-0938-4726-b684-f1d04590abdb",
             "id": "15",
             "name": "Status of School Learning Resource Center",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
             "url": "https://docs.google.com/forms/d/1hUEjPNQEOR1_R6DEZfEa49N-UkeaJ_N-yA1nJ8vFYts/viewform?edit_requested=true"
          }, {
@@ -173,8 +144,6 @@
             "guid": "e5b9bb3f-5594-4da0-9689-19edfe217689",
             "id": "16",
             "name": "PUP iApply 5.8.6",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
             "url": "https://iapply.pup.edu.ph/applicationform?go=1"
          }, {
@@ -183,8 +152,6 @@
             "guid": "35686d80-d9fd-43ae-a1a2-cefae67bb543",
             "id": "17",
             "name": "Media ethics - Wikipedia",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
             "url": "https://en.m.wikipedia.org/wiki/Media_ethics"
          }, {
@@ -193,8 +160,6 @@
             "guid": "754de3a8-1b64-490f-b1eb-d38d4b74bc19",
             "id": "18",
             "name": "New tab",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
             "url": "https://www.google.com.ph/search?q=characteristics+of+a+good+dance+ppt&oq=chara&aqs=chrome.2.69i57j69i59l3.4395j0j7&client=ms-android-cherrymobile&sourceid=chrome-mobile&ie=UTF-8"
          }, {
@@ -203,8 +168,6 @@
             "guid": "6b373bea-1fe5-489f-ade4-eecf01c361c8",
             "id": "19",
             "name": "Java For Loop",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
             "url": "https://www.w3schools.com/java/java_for_loop.asp"
          }, {
@@ -213,8 +176,6 @@
             "guid": "6cad44d2-c286-4efd-9456-6719a09be547",
             "id": "20",
             "name": "Java Data Types",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
             "url": "https://www.w3schools.com/java/java_data_types.asp"
          }, {
@@ -223,8 +184,6 @@
             "guid": "08217e71-ce07-4316-840b-0f86595c62ba",
             "id": "21",
             "name": "Variables and Types - Learn Python - Free Interactive Python Tutorial",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
             "url": "https://www.learnpython.org/en/Variables_and_Types"
          }, {
@@ -233,8 +192,6 @@
             "guid": "3fdc4c6a-3f70-4102-bdc8-7e7fc9891763",
             "id": "22",
             "name": "animepahe :: okay-ish anime website",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
             "url": "https://animepahe.com/"
          } ],
@@ -243,11 +200,9 @@
          "date_modified": "13257442605498323",
          "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
          "id": "3",
-         "name": "Mobile favorites",
-         "source": "unknown",
+         "name": "Mobile bookmarks",
          "type": "folder"
       }
    },
-   "sync_metadata": "CkMKHgiIgQISCMBj6wGOAQAAKg4QABgBIAAoADAAOABAABIAIAEqGEZMYjNRUitoT3lDeFI5RnVjZkpNWWc9PUgDoAYMEqkBCCASpAEKHDQ1T09FOVJtTWtLcmZQdlpVcTlpdGJNOG9Mdz0SJDkwYjJiNWNmLWE2ODAtNDNmYy1iYWE4LWJhNzI2ZTJmMGIwMxgAIAAoADCdjJv39jA4gI2b9/YwQICNm/f2MEocTXAwa0FUNi9XOGF6bk1TeDlucGFObXo0UnkwPVogIh7/9G4vREFEdW5BYVJvMDY4QXJ6Y25uMEIrS0RPWT1lAAAAABKpAQgiEqQBChwzb29jMEpTSmpYQlJVUWwzODR0bks5TTAvV2c9EiQyYWMwMjQxNC0zYTc0LTQ4YzgtOTQ2My1hMDA3Yjc2OWEyNjEYACAAKAAws7Dx/60xOM2y8f+tMUDNsvH/rTFKHG15S3RmNGF1eElyUWFXa3B1Q1BJYzFabzJGWT1aICIe//1pemVqSHlRUHVqa0dNakdJQnN4MWtXMHNoVzQ9ZQAAAAASpwEIFxKiAQocenR0cXExYWZFbC91MFY2OTBtYXpXVnZIR2ZNPRIkYWVlMDEyNDctYjBmNC00YTIxLWFkNTUtY2RiNjQ1MGEwZjI4GAAgACgAMLma5uruLzjJm+bq7i9AyZvm6u4vShxUWGhTRHRabEZ0eUZCVmlLWERMK1VPbFBLOFk9Wh4iHG5xQ2s1aFk0RVAwN09xR2JleGtPTGduK3gzQT1lAAAAABKpAQghEqQBChw5MU5ia0Fqb0lYekxad24vYXdGcnQrZ0VQTk09EiQ4ZjJiODQyMy1mYjM0LTRhZGMtYjlhMy1lMTI0MWMxOWU0ODMYACACKAIwrZScl90xOLrKvJeGMUCx/JuX3TFKHExSYVQ5eFZpMWFHV2RBZXBsOVkwWGJZVFNNOD1aICIe//p0T20wc3FnTUxMVjUrUXpvZDdwV3ZPeGJGY3c9ZQ1jOA8SqQEIHxKkAQocVG4rb3NlMzNMT1FnWFlZSWM0M05Oak1Hd05FPRIkZGY4MzE5MzgtNDk2NC00MTc1LTkyMzAtNDNmNzNiNDcwNGFmGAAgAigCMKuUnJfdMTjGrqmI8zBAsfybl90xShw0b0dzMDZSVU9JRk95WkRZcXhGL3MycFV4bUk9WiAiHv/pZFVnZFhYUm9QMUF0QW5BMi80Wk90MFBYU2ZrPWWQUGDcEqgBCBkSowEKHDNOTDBEa05BSlEwUzVSQ0tvTmFLcTZ2b2VWdz0SJDUxZWYzOTA1LWExMTAtNDdjOC04ZWU4LTZjODY3NzgzYTRjZhgAIAIoAjColJyX3TE4uoHmoYkwQK78m5fdMUocUkg5YlNXdXpaU2hCTVFBSWxIL1AxUUJUcXc0PVofIh23UmFIZ282NGhRZzhvWmpGYUlLTGVQQ3dlK000PWWe33juEqgBCB0SowEKHFdCMDNHVjQ3RnlqZ25seDRMa29hbTVjZUZNWT0SJDQ3YWRhNzliLTAzZTMtNDY5ZS05YjMwLTk1ZTU4NjVhMzcxMRgAIAIoAjCplJyX3TE4gf/loYkwQLD8m5fdMUocVG1HSFZMeXQwVGMwd0NuVTNaMzRINUR1VHpFPVofIh3tUXI0S2NVMDhEbXlCeG41RUZ4Njl2cXI4MzhvPWWLoIzREqgBCBYSowEKHEZWVDZaRjRhakwzOUVVZWFJNVR2V3lsOGZOND0SJDNmZGM0YzZhLTNmNzAtNDEwMi1iZGM4LTdlN2ZjOTg5MTc2MxgAIAAoADDE/uWhiTA4/v/loYkwQP7/5aGJMEocVnNUbUFWR213YUZHandNd09HV3dFamx5OEpFPVofIh3+NlVoakcrMXdxMFJaSDdBcVByMnJNME05Sll3PWUWcyxcEokBCAEShAEKHHl4Si82ZnZrZWNyN2twNUVRekI0dFdMcGRiRT0SJDlmMDYwYjQ4LTM3MDUtNTAyZi1iMWViLWEyNzZjNDdlZjQwNRgAIAAoADDtuPndsDA44aWk9+gvQOGlpPfoL0ocYVJDV0xnaEY5YjVJbnFLSUR2dUovanZRa0ZjPVoAZQAAAAASqAEIGxKjAQocMzhXdUtvQ3hXZEpESVlRSEFqaTFOVFo4TjFzPRIkZDM2Yzk2ZTQtNWY1YS00NGU1LTg5ZmEtZWNmMTY5MzljZTAxGAAgAigCMKyUnJfdMTjI4PS7+TBAr/ybl90xShxaZDVia0FjZWZVS1IzcFZoa1FxU0h1cWJDd2s9Wh8iHeRLdGpCRVJmNWRCZVplSHBXWWVLU3ZIanhGdU09ZWOPrjsSqAEIEhKjAQocQzNlcDYzbGJhVnhQQytkZUJHZHVhRCthazVRPRIkNzU0ZGUzYTgtMWI2NC00OTBmLWIxZWItZDM4ZDRiNzRiYzE5GAAgACgAMMT+5aGJMDiXqaT36C9Al6mk9+gvShxCcG1hL1ZMakZFeGlSNWU0S2N0Mm8yamRxWHc9Wh8iHe5wUGRiOXhJZG5pR2VsYS9KWG0rWWlxQ1poZmM9ZbVhQ40SiQEIAhKEAQocWWNTVG9udkVTUHdxQ3M0TDJjclZodjY4TDk4PRIkZjNkYjNhNDAtZDA1Ni01NTBmLTgwMzItNGM1YTEzMjkzNWIwGAAgACgAMO24+d2wMDiBpqT36C9Agaak9+gvShxvUFZraHdCUmJWNjVLQ1dSMitJT05IV29PdTg9WgBlAAAAABKoAQgVEqMBChxxSUdaQkJkNjJBQ0tOQzlaVVdQSjFHQnAzeG89EiQwODIxN2U3MS1jZTA3LTQzMTYtODQwYi0wZjg2NTk1YzYyYmEYACAAKAAwxP7loYkwOOmB5qGJMEDpgeahiTBKHFVyMWVUeWtyb1JoaVhiWDhSajBXTWFPbGdkVT1aHyId/Ul4eXpGQUVIb05VcmZBbTRKb204RGEwUXFOWT1l1VLb8RKoAQgTEqMBChxDelA4RE1wMlE2Z2JTTnBjMU5NOWp5ZUdiclU9EiQ2YjM3M2JlYS0xZmU1LTQ4OWYtYWRlNC1lZWNmMDFjMzYxYzgYACAAKAAwxP7loYkwOMmopPfoL0DJqKT36C9KHEZ0c1pFejZjVGhHUndQeEU5ekpaazZBcHZxYz1aHyId91lhamxnVFh0QTJINjdMUVkvcHFQNDhtdkxIdz1lkDhrtBKpAQgeEqQBChwyY2tKbmxQSEt6cnVwS2kvU3l5ZDdTSlo5R2c9EiQ4MzZlYTNlYy1lNDk1LTRmZTQtOGRjNi04ZjUyYTM0NDBlOGYYACACKAIwp5Scl90xONSbnqa8MECw/JuX3TFKHHpjcWZ1eCtkOW5nbDI0dDh5TEdCOHVtN2lYQT1aICIe/9JoZzh0NVZYNWpBeEFKRnE3NnMwNFp5SGlaWWs9ZdVHTTQSpwEIGBKiAQocdlB3VkptNlJ6WW5FMzRnZVNLQjVrSFF5d3VFPRIkM2VhNTYzODktZDkxZi00OWUzLWJhOTctMjBkM2VjNmM4ODZhGAAgACgAMLma5uruLzjom+bq7i9A6Jvm6u4vShxkSFFIWFI1Ky8wdm1DMC8yZWViMXQvdlBKVmc9Wh4iHHprMTVTd2lTMVlhN3ZxVmhJOVp3S29obSt4bz1lAAAAABKoAQgREqMBChxjejlQYVBwWnNKaDJEVzZZWS9uU2srUC9NUEE9EiQzNTY4NmQ4MC1kOWZkLTQzYWUtYTFhMi1jZWZhZTY3YmI1NDMYACAAKAAwxP7loYkwOKmopPfoL0CpqKT36C9KHG9TSkwwelRWcHVZOG5PUzlGTkxoVkg2cVVIYz1aHyId3XJsOTFMRDQ0QkdqNTBjTU9YS2ZweS91bmhLZz1l+JXEcBKoAQgQEqMBChxpN3ZsMzZGTjZsdlVhTEJlMDczTWRSdUhnZEE9EiRlNWI5YmIzZi01NTk0LTRkYTAtOTY4OS0xOWVkZmUyMTc2ODkYACAAKAAw86zqjtovOJSqpPfoL0CUqqT36C9KHHU0eitnZnNValJHd054cnBrREhqL0RKRk5sMD1aHyIdu2l2VWtSRS9WQnc3bWYrdy9UaDFkRDF1bXRQaz1lAAAAABKJAQgDEoQBChxuamdEdTg4ZUNydlhwODZwRDdmSEdjcUZwODg9EiRhODY5ZTM0YS00YjFiLTVhMDEtODM4MS0xNDA4NjJjNmJiMTgYACAAKAAw7bj53bAwONunpPfoL0Dbp6T36C9KHHl6TkIwMWNuNTRBN2NSVTB1VCsvUGdtVHRVbz1aAGUAAAAAEqgBCBoSowEKHG5GaVppTTR2OWRhNG93QlhVaFJmM3E2V0hWST0SJDUxMTE2NGFiLWNlYzgtNGQ3Yi1iZTJmLWYyYWI5YmRmNGE4ORgAIAIoAjDTkL/T3jE47IDmoYkwQNOQv9PeMUoccDFsSEpVSUtrNThaYzczRmQrQWgzQUhneUNJPVofIh3bTXNFTW9UKy9HYVRzeDJWbFhNcFhXU1ZNSXcwPWVECP19EqcBCA8SogEKHFdBVWQweTdTN1Y0eFpib29LcGFBU1ZkUkVnZz0SJGUxMGNiM2I3LTA5MzgtNDcyNi1iNjg0LWYxZDA0NTkwYWJkYhgAIAAoADDE/uWhiTA4tqmk9+gvQLappPfoL0ocQ1p5WVB6N1BmbVRHNTFveDZWTHZJdWQ2NU84PVoeIhx3NjR1c0VoTm03N3V0QjU1OWczOGxhM2xFZGc9ZclwtNESqAEIFBKjAQocRTVPWWxvQlpCQ1NUcG95Ym1LSnNMUUx1Nld3PRIkNmNhZDQ0ZDItYzI4Ni00ZWZkLTk0NTYtNjcxOWEwOWJlNTQ3GAAgACgAMMT+5aGJMDj3qKT36C9A96ik9+gvShxRaW1uU1pSNEVFcHhCNXpIUFAyait6UHpxL1E9Wh8iHfs4akpWQktjajhpZk1WL2s5QnpDWmhtSzJIQ3M9ZZA4a7QSqAEIHBKjAQocbmtISUc0bFNlVmFoVG5vc0ZTNUdCMFFuUG1jPRIkN2RmNTMwZTgtMTcxNy00ZDIyLWI3YjMtZGVhMDBhZGY3NWJjGAAgAigCMKqUnJfdMTj829P0+jBAsPybl90xShxEd1BCanlFVHh0QzZMYjNKTWZnZlNWK3NVWkE9Wh8iHehGdzJZOFFRTC83MCt4dW1FeGNuYkUrbGpKUDQ9ZcYMowIwADgA",
    "version": 1
 }
