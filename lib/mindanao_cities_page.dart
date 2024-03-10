@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class MindanaoCity extends StatefulWidget {
   final String category;
@@ -65,6 +66,13 @@ class _MindanaoCityState extends State<MindanaoCity> {
           showDialog(
             context: context,
             builder: (BuildContext context) {
+              if (_score >= 6) {
+                  AudioCache _audioCache = AudioCache();
+                  _audioCache.play('win.mp3');
+                } else {
+                  AudioCache _audioCache = AudioCache();
+                  _audioCache.play('loser.mp3');
+                }
               return AlertDialog(
                 title: Text('Game Over'),
                 content: Text('Your final score is $_score out of ${_imagePaths.length}'),
@@ -94,6 +102,13 @@ class _MindanaoCityState extends State<MindanaoCity> {
         setState(() {
           _score++;
         });
+        AudioCache _audioCache = AudioCache();
+        _audioCache.play('correct.mp3');
+      }
+      bool isWrong = selectedAnswer != correctAnswer;
+      if (isWrong) {
+        AudioCache _audioCache = AudioCache();
+        _audioCache.play('wrong.mp3');
       }
       showDialog(
         context: context,
@@ -180,13 +195,28 @@ class _MindanaoCityState extends State<MindanaoCity> {
           ),
         ),
         backgroundColor: Colors.lightBlue[50],
-        body: Center(
+        body: Container(
+          decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/red city.jpg'),
+            fit: BoxFit.cover,
+          ),
+        ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text(
-                'Question ${_currentSlide + 1} of ${_imagePaths.length}',
-                style: TextStyle(fontSize: 20),
+              Container(
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 69, 69, 196), // Background color
+                  borderRadius: BorderRadius.circular(8), // Optional: adds rounded corners
+                ),
+                padding: EdgeInsets.all(10),
+                child: Text(
+                  'Question ${_currentSlide + 1} of ${_imagePaths.length}',
+                  style: TextStyle(
+                    color: Colors.white, fontSize: 20 // Text color
+                  ),
+                ),
               ),
               SizedBox(height: 20),
               CarouselSlider.builder(
@@ -234,10 +264,19 @@ class _MindanaoCityState extends State<MindanaoCity> {
                 }).toList(),
               ),
               SizedBox(height: 20.0),
-              Text(
-                'Score: $_score',
-                style: TextStyle(fontSize: 24),
-              ),
+              Container(
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 69, 69, 196), // Background color
+                  borderRadius: BorderRadius.circular(8), // Optional: adds rounded corners
+                ),
+                padding: EdgeInsets.all(10),
+                child: Text(
+                  'Score: $_score',
+                  style: TextStyle(
+                    color: Colors.white, fontSize: 24 // Text color
+                  ),
+                ),
+              )
             ],
           ),
         ),

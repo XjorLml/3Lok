@@ -141,7 +141,11 @@ flutter:
     - assets/
     - assets/mohad.mp3
     - assets/lose.mp3
-
+    - assets/red city.jpg
+    - assets/orange prov.jpg
+    - assets/green reg.jpg
+    - assets/correct.mp3
+    - assets/wrong.mp3
     
     
     

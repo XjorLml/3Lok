@@ -54,7 +54,7 @@ class AboutUsPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(
-                      'About 3Lok',
+                      'About 1lok 3 Slides',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 24.0,
@@ -63,7 +63,7 @@ class AboutUsPage extends StatelessWidget {
                     ),
                     SizedBox(height: 20.0),
                     Text(
-                      'Welcome to 3Lok, the ultimate destination for exploring the beauty and diversity of the Philippines!',
+                      'Welcome to 1lok 3 Slides, the ultimate destination for exploring the beauty and diversity of the Philippines!',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 16.0,
@@ -80,7 +80,7 @@ class AboutUsPage extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      'At 3Lok, our mission is to engage and educate users about the rich culture, heritage, and geography of the Philippines through an immersive and enjoyable gameplay experience. We aim to promote learning and appreciation for the country\'s remarkable destinations and landmarks.',
+                      'At 1lok 3 Slides, our mission is to engage and educate users about the rich culture, heritage, and geography of the Philippines through an immersive and enjoyable gameplay experience. We aim to promote learning and appreciation for the country\'s remarkable destinations and landmarks.',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 16.0,
@@ -97,7 +97,7 @@ class AboutUsPage extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      'We envision 3Lok as a platform that inspires curiosity and fosters a deeper understanding of the Philippines\' unique places and attractions. Through our game, we hope to spark a sense of adventure and discovery while showcasing the beauty of our country.',
+                      'We envision 1lok 3 Slides as a platform that inspires curiosity and fosters a deeper understanding of the Philippines\' unique places and attractions. Through our game, we hope to spark a sense of adventure and discovery while showcasing the beauty of our country.',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 16.0,
@@ -106,7 +106,7 @@ class AboutUsPage extends StatelessWidget {
                     ),
                     SizedBox(height: 20.0),
                     Text(
-                      'Why Choose 3Lok?',
+                      'Why Choose 1lok 3 Slides?',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 20.0,
@@ -135,7 +135,7 @@ class AboutUsPage extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      '- Child-Friendly: Designed with children in mind, 3Lok provides a safe and enjoyable gaming experience for all ages.',
+                      '- Child-Friendly: Designed with children in mind, 1lok 3 Slides provides a safe and enjoyable gaming experience for all ages.',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 16.0,
@@ -151,28 +151,28 @@ class AboutUsPage extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      '- [Your Name]: Lead Developer',
+                      'Lumaban: Backend Developer',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 16.0,
                       ),
                     ),
                     Text(
-                      '- [Team Member Name]: Graphic Designer',
+                      'Gellido: Frontend Developer',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 16.0,
                       ),
                     ),
                     Text(
-                      '- [Team Member Name]: Content Creator',
+                      'Matanog: Project Manager',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 16.0,
                       ),
                     ),
                     Text(
-                      '- [Team Member Name]: Marketing Specialist',
+                      'Azaula: QA Tester',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 16.0,
@@ -180,7 +180,7 @@ class AboutUsPage extends StatelessWidget {
                     ),
                     SizedBox(height: 20.0),
                     Text(
-                      'Join us on this exciting journey of discovery and adventure with 3Lok! Experience the Philippines like never before.',
+                      'Join us on this exciting journey of discovery and adventure with 1lok 3 Slides! Experience the Philippines like never before.',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 16.0,

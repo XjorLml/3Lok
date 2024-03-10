@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class VisayasRegion extends StatefulWidget {
   final String category;
@@ -25,7 +26,7 @@ class _VisayasRegionState extends State<VisayasRegion> {
   ];
 
   List<List<String>> _imagePaths = [
-    ['assets/visayas/Easy_Region/Central/CentralV1.jpg', 'assets/visayas/Easy_Region/Central/CentralV2.jpg', 'assets/visayas/Easy_Region/Central/CentralV3 .jpg'],
+    ['assets/visayas/Easy_Region/Central/CentralV1.jpg', 'assets/visayas/Easy_Region/Central/CentralV2.jpg', 'assets/visayas/Easy_Region/Central/CentralV3.jpg'],
     ['assets/visayas/Easy_Region/Western/Western1.jpg', 'assets/visayas/Easy_Region/Western/Western2.jpg', 'assets/visayas/Easy_Region/Western/Western3.jpg'],
     ['assets/visayas/Easy_Region/Eastern/Eastern1.jpg', 'assets/visayas/Easy_Region/Eastern/Eastern2.webp', 'assets/visayas/Easy_Region/Eastern/Eastern3.jpg'],
     ['assets/visayas/Easy_Region/Western/Western4.jpg', 'assets/visayas/Easy_Region/Western/Western5.jpg', 'assets/visayas/Easy_Region/Western/Western6.jpg'],
@@ -54,6 +55,13 @@ class _VisayasRegionState extends State<VisayasRegion> {
           showDialog(
             context: context,
             builder: (BuildContext context) {
+              if (_score >= 3) {
+                  AudioCache _audioCache = AudioCache();
+                  _audioCache.play('win.mp3');
+                } else {
+                  AudioCache _audioCache = AudioCache();
+                  _audioCache.play('loser.mp3');
+                }
               return AlertDialog(
                 title: Text('Game Over'),
                 content: Text('Your final score is $_score out of ${_imagePaths.length}'),
@@ -83,6 +91,13 @@ class _VisayasRegionState extends State<VisayasRegion> {
         setState(() {
           _score++;
         });
+        AudioCache _audioCache = AudioCache();
+        _audioCache.play('correct.mp3');
+      }
+      bool isWrong = selectedAnswer != correctAnswer;
+      if (isWrong) {
+        AudioCache _audioCache = AudioCache();
+        _audioCache.play('wrong.mp3');
       }
       showDialog(
         context: context,
@@ -169,13 +184,28 @@ class _VisayasRegionState extends State<VisayasRegion> {
           ),
         ),
         backgroundColor: Colors.lightBlue[50],
-        body: Center(
+        body: Container(
+          decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/green reg.jpg'),
+            fit: BoxFit.cover,
+          ),
+        ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text(
-                'Question ${_currentSlide + 1} of ${_imagePaths.length}',
-                style: TextStyle(fontSize: 20),
+              Container(
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 69, 69, 196), // Background color
+                  borderRadius: BorderRadius.circular(8), // Optional: adds rounded corners
+                ),
+                padding: EdgeInsets.all(10),
+                child: Text(
+                  'Question ${_currentSlide + 1} of ${_imagePaths.length}',
+                  style: TextStyle(
+                    color: Colors.white, fontSize: 20 // Text color
+                  ),
+                ),
               ),
               SizedBox(height: 20),
               CarouselSlider.builder(
@@ -223,10 +253,19 @@ class _VisayasRegionState extends State<VisayasRegion> {
                 }).toList(),
               ),
               SizedBox(height: 20.0),
-              Text(
-                'Score: $_score',
-                style: TextStyle(fontSize: 24),
-              ),
+              Container(
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 69, 69, 196), // Background color
+                  borderRadius: BorderRadius.circular(8), // Optional: adds rounded corners
+                ),
+                padding: EdgeInsets.all(10),
+                child: Text(
+                  'Score: $_score',
+                  style: TextStyle(
+                    color: Colors.white, fontSize: 24 // Text color
+                  ),
+                ),
+              )
             ],
           ),
         ),

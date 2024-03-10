@@ -98,8 +98,8 @@ class _CategoryPageState extends State<CategoryPage> {
                           decoration: BoxDecoration(
                             border: _selectedCategory == 'Luzon'
                                 ? Border.all(
-                                    color: Colors.blue,
-                                    width: 2.0,
+                                    color: Color.fromARGB(255, 69, 69, 196),
+                                    width: 5.0,
                                   )
                                 : null,
                             borderRadius: BorderRadius.circular(10.0),
@@ -126,8 +126,8 @@ class _CategoryPageState extends State<CategoryPage> {
                           decoration: BoxDecoration(
                             border: _selectedCategory == 'Visayas'
                                 ? Border.all(
-                                    color: Colors.blue,
-                                    width: 2.0,
+                                    color: Color.fromARGB(255, 69, 69, 196),
+                                    width: 5.0,
                                   )
                                 : null,
                             borderRadius: BorderRadius.circular(10.0),
@@ -154,8 +154,8 @@ class _CategoryPageState extends State<CategoryPage> {
                           decoration: BoxDecoration(
                             border: _selectedCategory == 'Mindanao'
                                 ? Border.all(
-                                    color: Colors.blue,
-                                    width: 2.0,
+                                    color: Color.fromARGB(255, 69, 69, 196),
+                                    width: 5.0,
                                   )
                                 : null,
                             borderRadius: BorderRadius.circular(10.0),
@@ -192,13 +192,13 @@ class _CategoryPageState extends State<CategoryPage> {
                     onTap: () => _selectLevel('Regions'),
                     child: Container(
                       color: _selectedLevel == 'Regions'
-                          ? Colors.green
-                          : Colors.blue[100],
+                          ? Colors. green
+                          : Color.fromARGB(255, 69, 69, 196),
                       padding: EdgeInsets.all(8.0),
                       child: Text(
                         'Region (easy)',
                         style: TextStyle(
-                          color: Colors.black,
+                          color: Colors.white,
                         ),
                       ),
                     ),
@@ -208,12 +208,12 @@ class _CategoryPageState extends State<CategoryPage> {
                     child: Container(
                       color: _selectedLevel == 'Provinces'
                           ? Colors.orange
-                          : Colors.blue[100],
+                          : Color.fromARGB(255, 69, 69, 196),
                       padding: EdgeInsets.all(8.0),
                       child: Text(
                         'Province (medium)',
                         style: TextStyle(
-                          color: Colors.black,
+                          color: Colors.white,
                         ),
                       ),
                     ),
@@ -223,12 +223,12 @@ class _CategoryPageState extends State<CategoryPage> {
                     child: Container(
                       color: _selectedLevel == 'Cities'
                           ? Colors.red
-                          : Colors.blue[100],
+                          : Color.fromARGB(255, 69, 69, 196),
                       padding: EdgeInsets.all(8.0),
                       child: Text(
                         'Cities (hard)',
                         style: TextStyle(
-                          color: Colors.black,
+                          color: Colors.white,
                         ),
                       ),
                     ),
@@ -361,11 +361,18 @@ class _CategoryPageState extends State<CategoryPage> {
                 style: ElevatedButton.styleFrom(
                   primary: _selectedCategory.isNotEmpty &&
                           _selectedLevel.isNotEmpty
-                      ? Colors.blue
+                      ? Colors.white
                       : Colors.grey,
                   onPrimary: Colors.white,
+                  padding: EdgeInsets.symmetric(horizontal: 60, vertical: 10),
                 ),
-                child: Text('Play'),
+                child: Text(
+                        'Play',
+                        style: TextStyle(
+                        fontSize: 20.0,
+                        color: Color.fromARGB(255, 69, 69, 196),
+                        ),
+                      ),
               ),
             ],
           ),
