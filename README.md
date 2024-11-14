@@ -18,7 +18,7 @@ To install and run the Tri-Slides 1Loc app locally, follow these steps:
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/your-username/tri-slides-1loc.git
-   cd tri-slides-1loc
+   cd 3Lok
 2. **Install Dependencies**
    ```bash
    flutter pub get
