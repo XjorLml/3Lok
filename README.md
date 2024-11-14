@@ -55,8 +55,11 @@ To install and run the Tri-Slides 1Loc app locally, follow these steps:
 
 ## Screenshots
 
-![Gameplay Screenshot](assets/screenshots/gameplay.png)
-*Gameplay screen showcasing category selection and levels.*
+![Gameplay Screenshot](assets/gameplay/landing.png)
+![Gameplay Screenshot](assets/gameplay/about.png)
+![Gameplay Screenshot](assets/gameplay/instructions.png)
+![Gameplay Screenshot](assets/gameplay/categories.png)
+*Gameplay screenshots*
 
 ## Features
 
