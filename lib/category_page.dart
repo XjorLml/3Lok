@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/luzon_cities_page.dart';
-import 'package:flutter_app/luzon_provinces_page.dart';
-import 'package:flutter_app/mindanao_cities_page.dart';
-import 'package:flutter_app/mindanao_provinces_page.dart';
-import 'package:flutter_app/visayas_cities_page.dart';
-import 'package:flutter_app/visayas_provinces_page.dart';
-import 'package:flutter_app/visayas_regions_page.dart';
-import 'package:flutter_app/minadanao_regions_page.dart';
+import 'package:flutter_app/categories/cities/luzon_cities_page.dart';
+import 'package:flutter_app/categories/provinces/luzon_provinces_page.dart';
+import 'package:flutter_app/categories/cities/mindanao_cities_page.dart';
+import 'package:flutter_app/categories/provinces/mindanao_provinces_page.dart';
+import 'package:flutter_app/categories/cities/visayas_cities_page.dart';
+import 'package:flutter_app/categories/provinces/visayas_provinces_page.dart';
+import 'package:flutter_app/categories/regions/visayas_regions_page.dart';
+import 'package:flutter_app/categories/regions/minadanao_regions_page.dart';
 //import 'game_page.dart';
-import 'luzon_regions_page.dart.dart';
+import 'categories/regions/luzon_regions_page.dart.dart';
 
 class CategoryPage extends StatefulWidget {
+  const CategoryPage({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _CategoryPageState createState() => _CategoryPageState();
 }
 
@@ -39,7 +42,7 @@ class _CategoryPageState extends State<CategoryPage> {
         title: Row(
           children: <Widget>[
             IconButton(
-              icon: Icon(Icons.arrow_back),
+              icon: const Icon(Icons.arrow_back),
               onPressed: () {
                 Navigator.pop(context);
               },
@@ -52,7 +55,7 @@ class _CategoryPageState extends State<CategoryPage> {
       extendBodyBehindAppBar: true,
       backgroundColor: Colors.lightBlue[50],
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage('assets/bg.jpg'),
             fit: BoxFit.cover,
@@ -71,7 +74,7 @@ class _CategoryPageState extends State<CategoryPage> {
                       color: Colors.grey.withOpacity(0.1),
                       spreadRadius: 5,
                       blurRadius: 7,
-                      offset: Offset(0, 3),
+                      offset: const Offset(0, 3),
                     ),
                   ],
                 ),
@@ -79,14 +82,14 @@ class _CategoryPageState extends State<CategoryPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Text(
+              const Text(
                 'Choose a Category',
                 style: TextStyle(
                   fontSize: 24.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 20.0),
+              const SizedBox(height: 20.0),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
@@ -111,7 +114,7 @@ class _CategoryPageState extends State<CategoryPage> {
                             fit: BoxFit.cover,
                           ),
                         ),
-                        Text(
+                        const Text(
                           'Luzon',
                           style: TextStyle(color: Colors.black),
                         ),
@@ -139,7 +142,7 @@ class _CategoryPageState extends State<CategoryPage> {
                             fit: BoxFit.cover,
                           ),
                         ),
-                        Text(
+                        const Text(
                           'Visayas',
                           style: TextStyle(color: Colors.black),
                         ),
@@ -167,7 +170,7 @@ class _CategoryPageState extends State<CategoryPage> {
                             fit: BoxFit.cover,
                           ),
                         ),
-                        Text(
+                        const Text(
                           'Mindanao',
                           style: TextStyle(color: Colors.black),
                         ),
@@ -176,15 +179,15 @@ class _CategoryPageState extends State<CategoryPage> {
                   ),
                 ],
               ),
-              SizedBox(height: 20.0),
-              Text(
+              const SizedBox(height: 20.0),
+              const Text(
                 'Choose a Level',
                 style: TextStyle(
                   fontSize: 24.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 20.0),
+              const SizedBox(height: 20.0),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
@@ -194,8 +197,8 @@ class _CategoryPageState extends State<CategoryPage> {
                       color: _selectedLevel == 'Regions'
                           ? Colors.green
                           : Colors.blue[100],
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
+                      padding: const EdgeInsets.all(8.0),
+                      child: const Text(
                         'Region (easy)',
                         style: TextStyle(
                           color: Colors.black,
@@ -209,8 +212,8 @@ class _CategoryPageState extends State<CategoryPage> {
                       color: _selectedLevel == 'Provinces'
                           ? Colors.orange
                           : Colors.blue[100],
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
+                      padding: const EdgeInsets.all(8.0),
+                      child: const Text(
                         'Province (medium)',
                         style: TextStyle(
                           color: Colors.black,
@@ -224,8 +227,8 @@ class _CategoryPageState extends State<CategoryPage> {
                       color: _selectedLevel == 'Cities'
                           ? Colors.red
                           : Colors.blue[100],
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
+                      padding: const EdgeInsets.all(8.0),
+                      child: const Text(
                         'Cities (hard)',
                         style: TextStyle(
                           color: Colors.black,
@@ -235,7 +238,7 @@ class _CategoryPageState extends State<CategoryPage> {
                   ),
                 ],
               ),
-              SizedBox(height: 20.0),
+              const SizedBox(height: 20.0),
               ElevatedButton(
                 onPressed: () {
                   if (_selectedCategory == 'Luzon' &&
@@ -359,13 +362,12 @@ class _CategoryPageState extends State<CategoryPage> {
                   }
                 },
                 style: ElevatedButton.styleFrom(
-                  primary: _selectedCategory.isNotEmpty &&
+                  foregroundColor: Colors.white, backgroundColor: _selectedCategory.isNotEmpty &&
                           _selectedLevel.isNotEmpty
                       ? Colors.blue
                       : Colors.grey,
-                  onPrimary: Colors.white,
                 ),
-                child: Text('Play'),
+                child: const Text('Play'),
               ),
             ],
           ),

@@ -3,10 +3,12 @@ import 'instructions_page.dart';
 import 'about_us_page.dart'; // Import the AboutUsPage
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,6 +21,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// ignore: use_key_in_widget_constructors
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -44,42 +47,42 @@ class HomePage extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(30.0),
-                    image: DecorationImage(
+                    image: const DecorationImage(
                       image: AssetImage('assets/logo.png'),
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
-                SizedBox(height: 40.0),
+                const SizedBox(height: 40.0),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => InstructionsPage()),
+                      MaterialPageRoute(builder: (context) => const InstructionsPage()),
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Color.fromARGB(255, 69, 69, 196),
-                    padding: EdgeInsets.symmetric(horizontal: 60, vertical: 10),
+                    backgroundColor: const Color.fromARGB(255, 69, 69, 196),
+                    padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 10),
                   ),
-                  child: Text(
+                  child: const Text(
                     'Play',
                     style: TextStyle(fontSize: 20.0, color: Colors.white),
                   ),
                 ),
-                SizedBox(height: 20.0),
+                const SizedBox(height: 20.0),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => AboutUsPage()),
+                      MaterialPageRoute(builder: (context) => const AboutUsPage()),
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.white,
-                    padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+                    backgroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
                   ),
-                  child: Text(
+                  child: const Text(
                     'About Us',
                     style: TextStyle(fontSize: 20.0, color: Color.fromARGB(255, 37, 106, 196)),
                   ),

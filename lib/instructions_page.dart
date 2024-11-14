@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'category_page.dart'; // Import the CategoryPage
 
 class InstructionsPage extends StatelessWidget {
+  const InstructionsPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -10,7 +12,7 @@ class InstructionsPage extends StatelessWidget {
         title: Row(
           children: <Widget>[
             IconButton(
-              icon: Icon(Icons.arrow_back),
+              icon: const Icon(Icons.arrow_back),
               onPressed: () {
                 Navigator.pop(context);
               },
@@ -42,7 +44,7 @@ class InstructionsPage extends StatelessWidget {
                       color: Colors.grey.withOpacity(0.5),
                       spreadRadius: 5,
                       blurRadius: 7,
-                      offset: Offset(0, 3),
+                      offset: const Offset(0, 3),
                     ),
                   ],
                 ),
@@ -52,16 +54,16 @@ class InstructionsPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      Text(
+                      const Text(
                         'How to Play "Tri-Slides 1Loc"',
                         style: TextStyle(
                           fontSize: 24.0,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      SizedBox(height: 20.0),
+                      const SizedBox(height: 20.0),
                       RichText(
-                        text: TextSpan(
+                        text: const TextSpan(
                           style: TextStyle(
                             fontSize: 16.0,
                             color: Colors.black,
@@ -106,16 +108,16 @@ class InstructionsPage extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(height: 20.0),
+                      const SizedBox(height: 20.0),
                       ElevatedButton(
                         onPressed: () {
                           // Navigate to the categories page
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => CategoryPage()),
+                            MaterialPageRoute(builder: (context) => const CategoryPage()),
                           );
                         },
-                        child: Text('Ready to play'),
+                        child: const Text('Ready to play'),
                       ),
                     ],
                   ),

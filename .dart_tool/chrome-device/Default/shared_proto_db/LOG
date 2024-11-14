@@ -1,3 +1,2 @@
-2024/03/03-09:26:19.867 1b90 Reusing MANIFEST C:\Users\lemnu\AppData\Local\Temp\flutter_tools.1dccef20\flutter_tools_chrome_device.c4f8bf23\Default\shared_proto_db/MANIFEST-000001
-2024/03/03-09:26:19.868 1b90 Recovering log #3
-2024/03/03-09:26:19.869 1b90 Reusing old log C:\Users\lemnu\AppData\Local\Temp\flutter_tools.1dccef20\flutter_tools_chrome_device.c4f8bf23\Default\shared_proto_db/000003.log 
+2024/11/14-09:46:43.401 4168 Creating DB C:\Users\lemnu\AppData\Local\Temp\flutter_tools.d316f9b1\flutter_tools_chrome_device.8855b98e\Default\shared_proto_db since it was missing.
+2024/11/14-09:46:43.409 4168 Reusing MANIFEST C:\Users\lemnu\AppData\Local\Temp\flutter_tools.d316f9b1\flutter_tools_chrome_device.8855b98e\Default\shared_proto_db/MANIFEST-000001

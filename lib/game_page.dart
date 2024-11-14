@@ -5,22 +5,23 @@ class GamePage extends StatefulWidget {
   final String category;
   final String level;
 
-  GamePage({required this.category, required this.level});
+  const GamePage({required this.category, required this.level});
 
   @override
+  // ignore: library_private_types_in_public_api
   _GamePageState createState() => _GamePageState();
 }
 
 class _GamePageState extends State<GamePage> {
   int _currentSlide = 0;
   int _score = 0;
-  List<List<String>> _allAnswers = [
+  final List<List<String>> _allAnswers = [
     ['NCR', 'CALABARZON', 'MIMAROPA', 'CAR'],
     ['Cagayan Valley', 'CAR', 'Ilocos Region', 'CENTRAL LUZON'],
     ['CALABARZON', 'CENTRAL LUZON', 'MIMAROPA', 'CAGAYAN VALLEY']
   ];
 
-  List<List<String>> _imagePaths = [
+  final List<List<String>> _imagePaths = [
     ['assets/luzon/pasig1.jpg', 'assets/luzon/pasig2.jpg', 'assets/luzon/pasig3.jpg'],
     ['assets/luzon/CAR1.jpg', 'assets/luzon/CAR2.jpg', 'assets/luzon/CAR3.jpg'],
     ['assets/luzon/MIMAROPA1.jpg', 'assets/luzon/MIMAROPA2.jpg', 'assets/luzon/MIMAROPA3.jpg'],
@@ -37,7 +38,7 @@ class _GamePageState extends State<GamePage> {
             context: context,
             builder: (BuildContext context) {
               return AlertDialog(
-                title: Text('Game Over'),
+                title: const Text('Game Over'),
                 content: Text('Your final score is $_score out of 3'),
                 actions: [
                   TextButton(
@@ -45,7 +46,7 @@ class _GamePageState extends State<GamePage> {
                       Navigator.of(context).pop(); // Close the dialog
                       Navigator.pop(context); // Navigate back to the CategoryPage
                     },
-                    child: Text('Close'),
+                    child: const Text('Close'),
                   ),
                 ],
               );
@@ -77,7 +78,7 @@ class _GamePageState extends State<GamePage> {
                 Navigator.of(context).pop();
                 _nextSlide(); // Move to the next slide
               },
-              child: Text('Close'),
+              child: const Text('Close'),
             ),
           ],
         );
@@ -116,7 +117,7 @@ class _GamePageState extends State<GamePage> {
                 );
               },
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: _allAnswers[_currentSlide].map((answer) {
@@ -125,8 +126,7 @@ class _GamePageState extends State<GamePage> {
                     padding: const EdgeInsets.all(8.0),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.blue,
-                        onPrimary: Colors.white,
+                        foregroundColor: Colors.white, backgroundColor: Colors.blue,
                       ),
                       onPressed: () {
                         _checkAnswer(answer);
@@ -137,10 +137,10 @@ class _GamePageState extends State<GamePage> {
                 );
               }).toList(),
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             Text(
               'Score: $_score',
-              style: TextStyle(fontSize: 24),
+              style: const TextStyle(fontSize: 24),
             ),
           ],
         ),
